@@ -2,15 +2,19 @@
 <%- include('./partials/nav') %>
 
 <main>
-  <h1>hello, <%= user ? user.profile.name : "friend" %></h1>
+  <h1>Hello, <%= user ? user.profile.name : "friend" %></h1>
   <% if (user?.profile.avatar) { %>
     <div>
       <img
-        src="<%= user.profile.avatar %>"
-        alt="<%= user.profile.name %> avatar"
+      src="<%= user.profile.avatar %>"
+      alt="<%= user.profile.name %> avatar"
       />
     </div>
-  <% } %>
-</main>
-
+    <a href="/teams/new">Name Your Team</a>
+    <% } else { %>
+        <h2>Weclcome to Fantasy Soccoer Team</h2>
+        <h3>Plese sign in to create your own team of champions</h3>
+      <% } %>
+    </main>
+    
 <%- include('./partials/footer') %>
