@@ -1,0 +1,11 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<section>
+  <h1>Your Teams</h1>
+    <% teams.forEach(team => { %>
+      <h3><a href="/teams/<%= team._id %> "><%= team.name %></a> (by <%= team.owner.name %>) </h3> 
+    <% }) %>
+</section>
+
+<%- include('../partials/footer') %>

@@ -1,0 +1,12 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<h1><%= team.name %></h1>
+<h3><%= team.owner.name %>'s team </h3>
+<% if (user.profile._id.equals(team.owner._id)) { %>
+  <form action="/teams/<%= team._id %>?_method=DELETE" method="POST">
+    <button type="submit">Delete Team</button>
+  </form>
+<% } %> 
+
+<%- include('../partials/footer') %>
