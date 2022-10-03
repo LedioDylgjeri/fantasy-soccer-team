@@ -39,8 +39,12 @@ function show(req, res) {
   Team.findById(req.params.id)
   .populate('owner')
   .then(team => {
-    res.render('teams/show', {
-      team
+    Player.find({_id: {$nin: team.players}})
+    .then(playersNotChosen => {
+      res.render('teams/show', {
+        team,
+        playersNotChosen
+      })
     })
   })
 }

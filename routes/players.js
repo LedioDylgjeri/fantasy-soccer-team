@@ -4,6 +4,9 @@ import { isLoggedIn } from '../middleware/middleware.js'
 
 const router = Router()
 
+router.get('/', isLoggedIn, playersCtrl.index)
+router.get('/new', isLoggedIn, playersCtrl.new)
+router.post('/', isLoggedIn, playersCtrl.create)
 
 export {
   router
