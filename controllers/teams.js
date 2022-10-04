@@ -9,7 +9,6 @@ function newTeam(req, res) {
 function create(req, res) {
   // console.log(req.user.profile._id);
   req.body.owner = req.user.profile._id
-  console.log(req.body);
   Team.create(req.body)
   .then(team => {
     res.redirect('/teams')
@@ -25,8 +24,7 @@ function index(req, res) {
   .populate('owner')
   .then(teams => {
     res.render('teams/index', {
-      teams,
-      title: "⚽️"
+      teams
     })
   })
   .catch(err => {
@@ -38,12 +36,13 @@ function index(req, res) {
 function show(req, res) {
   Team.findById(req.params.id)
   .populate('owner')
+  .populate('players')
   .then(team => {
     Player.find({_id: {$nin: team.players}})
-    .then(playersNotChosen => {
+    .then(players => {
       res.render('teams/show', {
         team,
-        playersNotChosen
+        players
       })
     })
   })
@@ -56,10 +55,22 @@ function deleteTeam(req, res) {
   })
 }
 
+function addPlayer(req, res) {
+  Team.findById(req.params.id)
+  .then(team => {
+    team.players.push(req.body.playerId)
+    team.save()
+    .then(team => {
+        res.redirect(`/teams/${team._id}`)
+    })
+  })
+}
+
 export {
   newTeam as new,
   create,
   index,
   show,
   deleteTeam as delete,
+  addPlayer
 }

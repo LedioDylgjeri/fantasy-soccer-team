@@ -2,7 +2,38 @@
 <%- include('../partials/nav') %>
 
 <h1><%= team.name %></h1>
-<h3><%= team.owner.name %>'s team </h3>
+<h2><%= team.owner.name %>'s team </h2>
+<h3>Team Players</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Position</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% team.players.forEach(player => { %>
+      <tr>
+        <td><%= player.name %></tr></td>
+        <td><%= player.position %></tr></td>
+        <td><%= player.status %></tr></td>
+      </tr>
+      <% }) %> 
+    </tbody>
+  </table>
+  <form action="/teams/<%= team._id %>/players" method="POST"> 
+    <select name="playerId">
+      <% players.forEach(player => { %>  
+        <option value="<%= player._id %>">
+          <%= player.name %>  
+          <%= player.position %>  
+          <%= player.status %>  
+        </option> 
+      <% }) %> 
+    </select>
+    <button type="submit">Add Player</button>   
+  </form>
 <% if (user.profile._id.equals(team.owner._id)) { %>
   <form action="/teams/<%= team._id %>?_method=DELETE" method="POST">
     <button type="submit">Delete Team</button>

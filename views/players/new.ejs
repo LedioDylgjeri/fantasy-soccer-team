@@ -1,31 +1,30 @@
 <%- include('../partials/html-head') %>
 <%- include('../partials/nav') %>
 
-<h1>Add Your Players</h1>
-
-<form id="add-players" action="/players" autocomplete="off" method="POST">
-  <label for="player-name">Name:</label>
-  <input type="text" name="name" 
-  placeholder="Your player's name here...">
-  <label for="player-position">Position:</label>
-  <select name="position" id="player-position">
-    <option value="Goalkeeper">Goalkeeper</option>
-    <option value="Right Fullback">Right Fullback</option>
-    <option value="Left Fullback">Left Fullback</option>
-    <option value="Center Back">Center Back</option>
-    <option value="Right Midfielder">Right Midfielder</option>
-    <option value="Left Midfielder">Left Midfielder</option>
-    <option value="Center Midfielder">Center Midfielder</option>
-    <option value="Striker">Striker</option>
-  </select>  
-  <label for="player-number">Number:</label>  
-  <input type="number" name="number" placeholder="1">
-  <label for="starting-position">Starting:</label>
-  <select name="starting" id="player-starting">
-    <option value="Starting">Starting ⚽️</option>
-    <option value="Bench">Bench 🪑</option>
-  </select>
-  <button type="submit">Add Player</button>
-</form>
+<h2>Add Players</h2>
+ 
+  <form id="add-player" action="/players" autocomplete="off" method="POST">
+    <label for="player-name">Name:</label>
+    <input type="text" name="name" 
+    placeholder="Your player's name here...">
+    <label for="player-position">Position:</label>
+    <select name="position" id="player-position">
+      <option value="Goalkeeper">Goalkeeper</option>
+      <option value="Right Fullback">Right Fullback</option>
+      <option value="Left Fullback">Left Fullback</option>
+      <option value="Center Back">Center Back</option>
+      <option value="Right Midfielder">Right Midfielder</option>
+      <option value="Left Midfielder">Left Midfielder</option>
+      <option value="Center Midfielder">Center Midfielder</option>
+      <option value="Striker">Striker</option>
+    </select>  
+    <label for="starting-position">Status:</label>
+    <select name="status" id="player-status">
+      <option value="Starting">Starting ⚽️</option>
+      <option value="Bench">Bench 🪑</option>
+    </select>
+    <button type="submit">Add Player</button>
+  </form>
+  
 
 <%- include('../partials/footer') %>

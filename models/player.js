@@ -3,10 +3,9 @@ import mongoose from 'mongoose'
 const Schema = mongoose.Schema
 
 const playerSchema = new Schema({
-  name: String,
-  position: String,
-  number: Number,
-  starting: String,
+  name: {type: String, required: true},
+  position: {type: String, required: true},
+  status: String,
 }, {
   timestamps: true
 })
