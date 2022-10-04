@@ -22,8 +22,16 @@ function create(req, res) {
   })
 }
 
+function deletePlayer(req, res) {
+  Player.findByIdAndDelete(req.params.id)
+  .then(player => {
+    res.redirect('/players')
+  })
+}
+
 export {
   index, 
   newPlayer as new,
-  create
+  create,
+  deletePlayer as delete,
 }

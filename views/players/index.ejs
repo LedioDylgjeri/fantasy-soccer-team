@@ -9,6 +9,7 @@
           <th>Name</th>
           <th>Position</th>
           <th>Status</th>
+          <th>Delete</th>
         </tr>
       </thead>
       <tbody>
@@ -17,11 +18,15 @@
             <td><%= player.name %> </td>
             <td><%= player.position %></td> 
             <td><%= player.status %> </td> 
+            <td>
+              <form action="/players/<%= player._id %>?_method=DELETE" method="POST">
+                <button type="submit">x</button>
+              </form>
+            </td>
           </tr>  
-        <% }) %> 
-      </tbody>
-    </table>    
-  </form>
-  <% } %>
+        </tbody>
+      </table>    
+    <% }) %>
+  <% } %>  
 
 <%- include('../partials/footer') %>
