@@ -1,0 +1,23 @@
+div {
+  margin-top: 30px;
+  border: 2px solid rgb(56, 199, 235);
+  border-radius: 25px;
+  text-align: center;
+  width: 300px;
+  margin-left: 250px;
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195, 0.608) 0%, rgba(158, 62, 242, 0.725) 100%);
+  box-shadow: 7px 7px 7px rgba(26, 147, 228, 0.624)
+}
+
+h1 {
+  color: rgb(5, 5, 160);
+  text-decoration: underline;
+}
+
+#name-display{
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: -250px;
+  color: rgb(238, 219, 39);
+}

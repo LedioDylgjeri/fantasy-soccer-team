@@ -1,11 +1,14 @@
 <%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/teams/index.css">
 <%- include('../partials/nav') %>
 
-<section>
-  <h1>Teams</h1>
-    <% teams.forEach(team => { %>
-      <h3><a href="/teams/<%= team._id %> "><%= team.name %></a> </h3> 
-    <% }) %>
-</section>
-
+<div>
+  <section>
+    <h1>Teams</h1>
+      <% teams.forEach(team => { %>
+        <h3><a id="name-display"
+          href="/teams/<%= team._id %> "><%= team.name %></a> </h3> 
+      <% }) %>
+  </section>
+</div>
 <%- include('../partials/footer') %>
