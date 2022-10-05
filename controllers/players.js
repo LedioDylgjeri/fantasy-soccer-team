@@ -23,6 +23,21 @@ function create(req, res) {
   })
 }
 
+function show(req, res) {
+  Player.findById(req.params.id)
+  .populate('owner')
+  .then(player => {
+    console.log(taco);
+    res.render('players/show', {
+      player
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/players')
+  })
+}
+
 function deletePlayer(req, res) {
   Player.findByIdAndDelete(req.params.id)
   .then(player => {
@@ -86,6 +101,7 @@ export {
   index, 
   newPlayer as new,
   create,
+  show,
   deletePlayer as delete,
   edit,
   update

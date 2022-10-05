@@ -6,7 +6,7 @@
   <form id="add-player" action="/players/<%= player._id %>?_method=PUT" autocomplete="off" method="POST">
     <label for="player-name">Name:</label>
     <input type="text" name="name" value="<%= player.name %> "
-    placeholder="Your player's name here...">
+    placeholder="Player's name...">
     <label for="player-position">Position:</label>
     <select name="position" id="player-position">
       <option value="<%= player.postion %> "></option>
@@ -22,8 +22,8 @@
     <label for="starting-position">Status:</label>
     <select name="status" id="player-status">
       <option value="<%= player.status %> "></option>
-      <option value="Starting">Starting</option>
-      <option value="Bench">Bench</option>
+      <option value="⚽️">⚽️</option>
+      <option value="🪑">🪑</option>
     </select>
     <button type="submit">Edit Player</button>
   </form>

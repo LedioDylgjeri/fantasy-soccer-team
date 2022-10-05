@@ -8,6 +8,8 @@ router.get('/', isLoggedIn, playersCtrl.index)
 
 router.get('/new', isLoggedIn, playersCtrl.new)
 
+router.get('/:id', isLoggedIn, playersCtrl.show)
+
 router.get('/:id/edit', isLoggedIn, playersCtrl.edit)
 
 router.post('/', isLoggedIn, playersCtrl.create)

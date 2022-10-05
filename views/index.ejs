@@ -2,21 +2,34 @@
 <%- include('./partials/nav') %>
 
 <main>
-  <h1>Hello, <%= user ? user.profile.name : "friend" %></h1>
+  <h1><%= user ? user.profile.name : "" %></h1>
   <% if (user?.profile.avatar) { %>
-    <div>
-      <img
+    <div id="profile-div">
+      <img id="user-profile"
       src="<%= user.profile.avatar %>"
       alt="<%= user.profile.name %> avatar"
       />
-    </div>
-    <% } else { %>
-        <h2>Weclcome to Fantasy Soccoer Team</h2>
-        <h3>Plese sign in to create your own team of champions</h3>
-      <% } %>
-    </main>
-    <div>
+      <div id="signin-div">
+        <h2 id="thank-you">Thank you for signing in!</h2>
+        <h3 id="create-team">To create your team of champions:
+          <ul>
+            <li>Give your team a name by clicking on 'Name Your Team'</li>
+            <li>To access teams click on 'Team List'</li>
+            <li>To add players to your player list click on 'Add Player'</li>
+            <li>To delete or edit your players click on 'Your Players' </li>
+          </ul>
+          Once you have created a list of players you can click on your team name and start adding players to your team. 
+        </h3>
+      </div>
       <p>⚽️</p>
     </div>
+    <% } else { %>
+      <div id="welcome">
+        <h2>⚽️ Fantasy Soccer ⚽️</h2>
+        <h3>This application was motivated by my love for the sport. Being a Manchester United fan hasn't been easy. There are always debates around who deserves to be on the team. With Fantasy Soccer, I get to add the players I want and you can do the same. If you were the manager of your favorite team, who would you choose?</h3>
+        <h3>Plese sign and create your own team of champions.</h3>
+      </div>
+      <% } %>
+    </main>
     
 <%- include('./partials/footer') %>

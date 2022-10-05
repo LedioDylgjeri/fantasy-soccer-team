@@ -12,10 +12,9 @@ html {
 }
 
 body {
-  background-color: #756f76;
-  /* background-image: url(https://img.pikbest.com/backgrounds/20210622/realistic-football-field-gradient-background-design_6000239.jpg!bw700);
+  background-image: url(https://img.pikbest.com/backgrounds/20210622/realistic-football-field-gradient-background-design_6000239.jpg!bw700);
   background-position: center;
-  background-size: cover; */
+  background-size: cover;
   color: #f6f6f6;
   /* Use a system font, if none are available use any found sans-sarif font */
   font-family: system-ui, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
@@ -42,14 +41,66 @@ main {
   justify-content: center;
   flex-direction: column;
   margin-top: 200px;
-  color: rgb(213, 131, 8);
+  color: rgb(249, 155, 13);
+}
+
+#welcome {
+  border: 2px solid rgb(26, 147, 228);
+  border-radius: 25px;
+  background: rgba(82, 82, 232, 0.652);
+  box-shadow: 7px 7px 7px rgba(26, 147, 228, 0.624);
+  margin-top: 90px;
+  width: 560px;
+}
+
+main > h1 {
+  margin-top: -150px;
+}
+
+#profile-div {
+  margin-bottom: 125px;
+}
+
+div > img {
+  border: 2px solid rgb(15, 179, 239);
+  border-radius: 50%;
+  display: block;
+  align-items: center;
+}
+
+#signin-div {
+  border: 2px solid rgb(18, 139, 238);
+  border-radius: 25px;
+  margin-top: 20px;
+  width: 555px;
+  background-color: rgba(82, 82, 232, 0.652);
+  box-shadow: 7px 7px 7px rgba(26, 147, 228, 0.624);
+}
+
+#user-profile {
+  margin: 0 auto;
+}
+
+div > h2, h3, li {
+  text-align: center;
+  width: 550px;
+}
+
+ul > li {
+  text-align: left;
+}
+
+#welcome > h3 {
+  width: 550px;
+  text-align: center;
 }
 
 .right {
   margin-left: auto;
 }
 
-div > p {
+div > p{
   text-align: center;
-  margin-top: 255px;
+  margin-top: 110px;
+  font-size: 25px;
 }
