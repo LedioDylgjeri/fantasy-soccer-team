@@ -2,12 +2,13 @@
 <link rel="stylesheet" href="/stylesheets/teams/new.css" />
 <%- include('../partials/nav') %>
 
-<h1>Add Your Team</h1>
+<div>
+  <h1>Add Your Team</h1>
 
-<form action="/teams" autocomplete="off" method="POST">
-  <input type="text" name="name" 
-  placeholder="Your teams name here...">
-  <button type="submit">Add Team</button>
-</form>
-
+  <form action="/teams" autocomplete="off" method="POST">
+    <input type="text" name="name" 
+    placeholder="Your teams name here...">
+    <button type="submit">Add Team</button>
+  </form>
+</div>
 <%- include('../partials/footer') %>

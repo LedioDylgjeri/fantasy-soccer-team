@@ -48,7 +48,6 @@ main {
   border: 2px solid rgb(26, 147, 228);
   border-radius: 25px;
   background: rgba(82, 82, 232, 0.652);
-  box-shadow: 7px 7px 7px rgba(26, 147, 228, 0.624);
   margin-top: 90px;
   width: 560px;
 }
@@ -69,11 +68,11 @@ div > img {
 }
 
 #signin-div {
-  border: 2px solid rgb(18, 139, 238);
+  border: 2px solid rgb(26, 147, 228);
   border-radius: 25px;
   margin-top: 20px;
   width: 555px;
-  background-color: rgba(82, 82, 232, 0.652);
+  background-color: rgba(42, 106, 226, 0.661);
   box-shadow: 7px 7px 7px rgba(26, 147, 228, 0.624);
 }
 
