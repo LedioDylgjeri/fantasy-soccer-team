@@ -9,7 +9,6 @@
           <th>Name</th>
           <th>Position</th>
           <th>Status</th>
-          <th>Delete</th>
         </tr>
       </thead>
       <tbody>
@@ -19,9 +18,14 @@
             <td><%= player.position %></td> 
             <td><%= player.status %> </td> 
             <td>
-              <form action="/players/<%= player._id %>?_method=DELETE" method="POST">
-                <button type="submit">x</button>
-              </form>
+              <% if (player.owner.equals(user?.profile._id)) { %> 
+                <form action="/players/<%= player._id %>?_method=DELETE" method="POST">
+                  <button type="submit">X</button>
+                </form>
+                <a href="/players/<%= player._id %>/edit?_method=DELETE" method="POST">
+                  <button class="btn" type="submit">Edit Player</button>
+                </a>
+              <% } %>  
             </td>
           </tr>  
         </tbody>

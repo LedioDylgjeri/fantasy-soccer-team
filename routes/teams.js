@@ -10,12 +10,11 @@ router.get('/new', isLoggedIn, teamsCtrl.new)
 
 router.post('/', isLoggedIn, teamsCtrl.create)
 
-router.get('/:id', teamsCtrl.show)
+router.get('/:id', isLoggedIn, teamsCtrl.show)
 
 router.post('/:id/players', isLoggedIn, teamsCtrl.addPlayer)
 
 router.delete('/:id', isLoggedIn, teamsCtrl.delete)
-
 
 
 export {

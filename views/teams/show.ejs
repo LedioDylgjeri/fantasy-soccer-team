@@ -2,7 +2,7 @@
 <%- include('../partials/nav') %>
 
 <h1><%= team.name %></h1>
-<h2><%= team.owner.name %>'s team </h2>
+<h2><%= team.owner.name %>'s team </h2> 
 <form action="/teams/<%= team._id %>/players" method="POST"> 
   <select name="playerId">
     <% players.forEach(player => { %>  

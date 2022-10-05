@@ -66,11 +66,12 @@ function addPlayer(req, res) {
   })
 }
 
+
 export {
   newTeam as new,
   create,
   index,
   show,
   deleteTeam as delete,
-  addPlayer
+  addPlayer,
 }

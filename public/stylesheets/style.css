@@ -12,17 +12,24 @@ html {
 }
 
 body {
-  background-color: #1a1a1a;
+  background-color: #756f76;
+  /* background-image: url(https://img.pikbest.com/backgrounds/20210622/realistic-football-field-gradient-background-design_6000239.jpg!bw700);
+  background-position: center;
+  background-size: cover; */
   color: #f6f6f6;
   /* Use a system font, if none are available use any found sans-sarif font */
   font-family: system-ui, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
     'Helvetica Neue', sans-serif;
   margin: 0;
+  height: 100vh;
+  font-family: 'Kanit', sans-serif;
 }
 
 nav {
-  background-color: #f6f6f6;
-  color: #1a1a1a;
+  /* background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgb(4, 100, 156) 25%, rgb(13, 2, 80) 90%); */
+  background-color: silver;
+  color: #790995;
   display: flex;
   align-items: center;
   padding: 10px;
@@ -34,8 +41,15 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 200px;
+  color: rgb(213, 131, 8);
 }
 
 .right {
   margin-left: auto;
+}
+
+div > p {
+  text-align: center;
+  margin-top: 255px;
 }
