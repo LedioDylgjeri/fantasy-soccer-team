@@ -3,7 +3,7 @@
 I grew up plyaing soccer and became a huge fan of the sport.  Lately, my team hasn't been doing so well. Their performance has sparked debates around the players.  If I had the chance to create my own team, who would I chose?  
 
 ## Descrtiption:
-This app gives users the chance to create their own soccer team.  They can get creative with the team name or use an existing team. Create and add your favorite players to the team.
+This app gives users the chance to create their own soccer team.  The user can get creative with the team name or use an existing team. Create and add your favorite players to the team.
 
 ## How to use it:
 * Give your team a name by clicking on 'Name Your Team'
