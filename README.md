@@ -13,7 +13,7 @@ This app gives users the chance to create their own soccer team.  The user can g
 * Add players to your team by navigating to the team you created and choosing players from the drop down menu
 
 ## Check out the app:
-[FANTASY SOCCER]()
+[FANTASY SOCCER](https://fantasy-soccer.fly.dev/)
 
 ## Technologies used:
 * HTML
