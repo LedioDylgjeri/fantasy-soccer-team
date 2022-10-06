@@ -1,8 +1,9 @@
 <%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/players/new.css">
 <%- include('../partials/nav') %>
 
-<h2>Add Players</h2>
- 
+<div>
+  <h2>Add Players</h2>
   <form id="add-player" action="/players" autocomplete="off" method="POST">
     <label for="player-name">Name:</label>
     <input type="text" name="name" 
@@ -23,8 +24,10 @@
       <option value="⚽️">⚽️</option>
       <option value="🪑">🪑</option>
     </select>
-    <button type="submit">Add Player</button>
+    <button id="add-btn"
+      type="submit">Add Player
+    </button>
   </form>
-  
+</div>
 
 <%- include('../partials/footer') %>

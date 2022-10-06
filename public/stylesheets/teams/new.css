@@ -11,8 +11,12 @@
 }
 
 h1 {
-  color: rgb(92, 219, 241);
+  color: rgb(61, 215, 242);
   flex-direction: row;
+  border: 2px solid rgb(90, 225, 246);
+  margin: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.281);
 }
 
 input, button {
@@ -20,14 +24,15 @@ input, button {
 }
 
 input {
-  border: none;
+  border: 2px solid rgb(90, 225, 246);
   margin-left: 70px;
   margin-bottom: 25px;
   height: 30px;
   width: 165px;
   border-radius: 5px;
-  color: rgb(114, 4, 4);
+  color: rgb(181, 7, 7);
   background-color: rgba(240, 234, 234, 0.521);
+  font-weight: bolder;
 }
 
 button {
@@ -36,9 +41,15 @@ button {
   height: 25px;
   margin-left: 125px;
   background-color: rgba(19, 185, 227, 0.573);
+  font-weight: bolder;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: rgba(8, 205, 231, 0.724);
+  background-color: rgba(8, 205, 231, 0.912);
+  font-size: 15px; 
+  -webkit-transition: font-size .6s ease-in-out;
+  -moz-transition: font-size .6s ease-in-out;
+  -o-transition: font-size .6s ease-in-out;
+  transition: font-size .6s ease-in-out;
 }

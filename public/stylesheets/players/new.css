@@ -1,0 +1,64 @@
+div {
+  margin: 0 auto;
+  margin-top: 60px;
+  border: 2px solid rgb(83, 212, 232);
+  border-radius: 25px;
+  text-align: center;
+  width: 550px;
+  padding-bottom: 10px;
+  background: rgb(34,193,195);
+  background: linear-gradient(45deg, rgba(34,193,195,.7) 0%, rgba(81,45,253,.7) 100%);
+  box-shadow: 7px 7px 7px rgba(26, 147, 228, 0.624);
+}
+
+h2 {
+  color: rgb(211, 79, 49);
+  border: 2px solid rgb(222, 93, 242);
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  font-size: 35px;
+}
+
+form, label {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: 25px auto;
+  color: rgb(11, 245, 163);
+}
+
+input {
+  margin-top: -10px;
+  height: 35px;
+  border-radius: 25px;
+  border: 2px solid rgb(83, 212, 232);
+  font-weight: bolder;
+  background-color: rgba(255, 192, 203, 0.677);
+  text-align: center;
+}
+
+select, option {
+  margin-top: -10px;
+  border: 2px solid rgb(83, 212, 232);
+  cursor: pointer;
+  text-align: center;
+  height: 35px;
+  border-radius: 25px;
+  background: rgba(255, 192, 203, 0.677);
+  font-weight: bolder;
+}
+
+#add-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 35px;
+  padding: 10px 15px;
+  border: 2px solid rgba(255, 0, 0, 0.761);
+  border-radius: 25px;
+  background: rgba(241, 157, 13, 0.829);
+  font-size: 15px;
+  font-weight: bolder;
+}

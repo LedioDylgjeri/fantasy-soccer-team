@@ -14,10 +14,13 @@ div {
 
 h1 {
   margin-bottom: -15px;
+  border: 2px solid white;
+  border-left: none;
+  border-top: none;
+  border-right: none;
 }
 
-h1, h2, h3 {
-  text-decoration: underline;
+h2, h3 {
   color: rgba(255, 255, 0, 0.818);
 }
 
@@ -39,8 +42,11 @@ table {
 .t-head {
   margin: 0 60px;
   padding: 0 55px;
-  text-decoration: underline;
   color: rgba(255, 255, 0, 0.855);
+  border: 2px solid white;
+  border-left: none;
+  border-top: none;
+  border-right: none;
 }
 
 .add-btn, .delete-btn {
