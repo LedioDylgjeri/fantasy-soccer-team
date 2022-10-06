@@ -1,14 +1,17 @@
 <%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/players/index.css">
 <%- include('../partials/nav') %>
 
+<div>
   <h1>Your Players</h1>
   <% if (user) { %>
-    <table>
+    <table id="table">
       <thead>
         <tr>
-          <th>Name</th>
-          <th>Position</th>
-          <th>Status</th>
+          <th class="th">Name</th>
+          <th class="th">Position</th>
+          <th class="th">Status</th>
+          <th class="th">Edit/Delete</th>
         </tr>
       </thead>
       <tbody>
@@ -19,18 +22,20 @@
             <td><%= player.status %> </td> 
             <td>
               <% if (player.owner.equals(user?.profile._id)) { %> 
-                <form action="/players/<%= player._id %>?_method=DELETE" method="POST">
-                  <button type="submit">X</button>
-                </form>
-                <a href="/players/<%= player._id %>/edit?_method=DELETE" method="POST">
-                  <button class="btn" type="submit">Edit Player</button>
+                <a id="edit-btn" href="/players/<%= player._id %>/edit?_method=DELETE" method="POST">
+                    <button type="submit">Edit</button>
                 </a>
+                <form action="/players/<%= player._id %>?_method=DELETE" method="POST">
+                  <button id="dlt-btn" type="submit">X</button>
+                </form>
               <% } %>  
             </td>
           </tr>  
         </tbody>
-      </table>    
-    <% }) %>
+      <% }) %>
+    </table>    
   <% } %>  
+</div>
+
 
 <%- include('../partials/footer') %>

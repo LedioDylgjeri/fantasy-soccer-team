@@ -1,0 +1,57 @@
+div {
+  margin: 0 auto;
+  margin-top: 30px;
+  border: 2px solid rgb(83, 212, 232);
+  border-radius: 25px;
+  text-align: center;
+  width: 650px;
+  padding-bottom: 10px;
+  background: rgb(239, 108, 237);
+  background: linear-gradient(45deg, rgba(130, 234, 236, 0.7) 0%, rgba(81,45,253,.7) 100%);
+  box-shadow: 7px 7px 7px rgba(26, 147, 228, 0.624);
+}
+
+h1 {
+  border: 2px solid rgb(83, 212, 232);
+  background: rgba(241, 180, 190, 0.714);
+  border-radius: 25px;
+  margin: 30px 200px;
+  color: rgb(8, 96, 196);
+}
+
+#table {
+  margin: 0 auto;
+  margin-top: -20px;
+  width: 600px;
+}
+
+.th {
+  border-bottom: 2px solid white;
+  color: rgb(84, 240, 201);
+  text-align: center;
+}
+
+td {
+  color: yellow;
+}
+
+#edit-btn, form {
+  display: inline;
+}
+
+#edit-btn > button {
+  background-color: transparent;
+  /* border: none; */
+  border-radius: 10px;
+  padding: 2px 7px;
+  font-weight: bolder;
+  color: rgb(170, 244, 97);
+}
+
+#dlt-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: bolder;
+  color: red;
+}

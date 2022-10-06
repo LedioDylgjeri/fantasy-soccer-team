@@ -3,7 +3,8 @@ import { Profile } from "../models/profile.js";
 import { Player } from "../models/player.js";
 
 function index(req, res) {
-  Player.find({})
+  Player.find({owner: req.user.profile._id})
+  .populate('owner')
   .then(players => {
     res.render('players/index', {
       players

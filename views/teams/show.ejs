@@ -15,7 +15,9 @@
         </option> 
       <% }) %> 
     </select>
-    <button class="add-btn" type="submit">Add Player</button>   
+    <% if (user.profile._id.equals(team.owner._id)) { %>
+      <button class="add-btn" type="submit">Add Player</button>  
+    <% } %>  
   </form>
   <% if (user.profile._id.equals(team.owner._id)) { %>
     <form action="/teams/<%= team._id %>?_method=DELETE" method="POST">
