@@ -66,7 +66,6 @@ function addPlayer(req, res) {
   })
 }
 
-
 export {
   newTeam as new,
   create,

@@ -25,14 +25,19 @@ body {
 }
 
 nav {
-  /* background: rgb(2,0,36);
-  background: linear-gradient(180deg, rgb(4, 100, 156) 25%, rgb(13, 2, 80) 90%); */
-  background-color: silver;
-  color: #790995;
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlPxxuQIoWpe2ULI_lbBqSkStmTQ6rhl4poyqm2t7pHlMZRl_DqPkFhCteUeKQfNTzYg8&usqp=CAU);
+  color: #f1e428;
   display: flex;
   align-items: center;
   padding: 10px;
   min-height: 60px;
+}
+
+nav > a{
+  color: rgba(5, 201, 149, 0.937);
+  text-decoration: none;
+  padding-right: 25px;
+  margin: 0 auto;
 }
 
 main {

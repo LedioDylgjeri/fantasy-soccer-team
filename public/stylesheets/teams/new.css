@@ -1,17 +1,18 @@
-div {
+.container {
   text-align: center;
   border: 2px solid rgb(90, 225, 246);
   width: 300px;
   height: 200px;
+  margin: 0 auto;
   margin-top: 250px;
-  margin-left: 250px;
   border-radius: 25px;
   background: linear-gradient(120deg, rgba(43, 43, 224, 0.743), rgba(183, 27, 244, 0.79));
-  box-shadow: 7px 7px 7px rgba(26, 147, 228, 0.624)
+  box-shadow: 7px 7px 7px rgba(26, 147, 228, 0.624);
 }
 
 h1 {
   color: rgb(92, 219, 241);
+  flex-direction: row;
 }
 
 input, button {
