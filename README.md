@@ -1,6 +1,6 @@
 # Fantasy-Soccer
 
-I grew up plyaing soccer and became a huge fan of the sport.  Lately, my team hasn't been doing so well. Their performance has sparked debates around the players.  If I had the chance to create my own team, who would I chose?  
+I grew up plyaing soccer and became a huge fan of the sport.  Lately, my team hasn't been doing so well. Their performance has sparked debates around the players.  If given the chance to create my own team, who would I chose?  
 
 ## Check out the app:
 [FANTASY SOCCER](https://fantasy-soccer.fly.dev/)
@@ -36,7 +36,7 @@ ERD:
 App:
 ![For web browser](./public/READMEimg/Screen%20Shot%202022-10-06%20at%2012.46.27%20PM.png)
 
-![Trello](https://trello.com/b/AFXoDuFz/fantasy-soccer-team)
+[Trello](https://trello.com/b/AFXoDuFz/fantasy-soccer-team)
 
 ## Ice box:
 * Add additional functionality to edit team players
