@@ -10,6 +10,10 @@ function index(req, res) {
       players
     })
   })
+  .catch(err => {
+    console.log(err);
+    res.redirect('/players')
+  })
 }
 
 function newPlayer(req, res) {
@@ -65,6 +69,10 @@ function updatePlayer(req, res) {
       res.redirect(`/players/${player._id}`)
     })
   })
+  .catch(err => {
+    console.log(err);
+    res.redirect('/players')
+  })
 }
 
 function edit(req, res) {
@@ -80,7 +88,7 @@ function edit(req, res) {
   })
 }
 
-function update(req, res) {
+function editPlayer(req, res) {
   Player.findById(req.params.id)
   .then(player => {
     if (player.owner.equals(req.user.profile._id)){
@@ -105,5 +113,5 @@ export {
   show,
   deletePlayer as delete,
   edit,
-  update
+  editPlayer
 }

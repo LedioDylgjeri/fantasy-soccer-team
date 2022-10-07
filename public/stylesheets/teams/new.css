@@ -11,7 +11,7 @@
 }
 
 h1 {
-  color: rgb(61, 215, 242);
+  color: rgb(6, 170, 198);
   flex-direction: row;
   border: 2px solid rgb(90, 225, 246);
   margin: 20px;
@@ -40,13 +40,14 @@ button {
   border-radius: 5px;
   height: 25px;
   margin-left: 125px;
-  background-color: rgba(19, 185, 227, 0.573);
+  background-color: rgba(238, 118, 20, 0.573);
   font-weight: bolder;
   cursor: pointer;
 }
 
 button:hover {
   background-color: rgba(8, 205, 231, 0.912);
+  border: 2px dotted yellow;
   font-size: 15px; 
   -webkit-transition: font-size .6s ease-in-out;
   -moz-transition: font-size .6s ease-in-out;

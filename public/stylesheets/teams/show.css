@@ -13,11 +13,9 @@ div {
 }
 
 h1 {
-  margin-bottom: -15px;
-  border: 2px solid white;
-  border-left: none;
-  border-top: none;
-  border-right: none;
+  border-bottom: 2px solid white;
+  margin:0 100px;
+  color: rgba(0, 255, 255, 0.904);
 }
 
 h2, h3 {
@@ -43,10 +41,11 @@ table {
   margin: 0 60px;
   padding: 0 55px;
   color: rgba(255, 255, 0, 0.855);
-  border: 2px solid white;
-  border-left: none;
-  border-top: none;
-  border-right: none;
+  border-bottom: 2px solid white;
+}
+
+form {
+  display: inline;
 }
 
 .add-btn, .delete-btn {
@@ -59,17 +58,53 @@ table {
 }
 
 .add-btn {
-  background-color: rgba(205, 82, 243, 0.868);
+  background-color: rgba(135, 11, 237, 0.719);
+  margin: 10px auto;
+  color: azure;
 }
 
 .add-btn:hover {
-  background-color: rgb(189, 5, 244);
+  background-color: rgb(201, 64, 242);
+  color: rgb(44, 235, 44);
+  font-size: 15px; 
+  -webkit-transition: font-size .6s ease-in-out;
+  -moz-transition: font-size .6s ease-in-out;
+  -o-transition: font-size .6s ease-in-out;
+  transition: font-size .6s ease-in-out;
 }
 
 .delete-btn {
   background-color: rgba(232, 45, 8, 0.713);
+  margin: 10px auto;
 }
 
 .delete-btn:hover {
   background-color: rgb(221, 15, 8);
+  color: white;
+  font-size: 15px; 
+  -webkit-transition: font-size .6s ease-in-out;
+  -moz-transition: font-size .6s ease-in-out;
+  -o-transition: font-size .6s ease-in-out;
+  transition: font-size .6s ease-in-out;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  margin-left: 125px;
+  background-color: rgba(185, 15, 232, 0.573);
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(8, 6, 147, 0.762);
+  color: white;
+  font-size: 15px; 
+  -webkit-transition: font-size .6s ease-in-out;
+  -moz-transition: font-size .6s ease-in-out;
+  -o-transition: font-size .6s ease-in-out;
+  transition: font-size .6s ease-in-out;
 }

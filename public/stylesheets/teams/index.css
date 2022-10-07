@@ -12,11 +12,8 @@ div {
 
 h1 {
   color: rgba(5, 5, 160, 0.805);
-  border: 2px solid rgb(74, 216, 235);
+  border-bottom: 2px solid rgb(74, 216, 235);
   margin: 10px 35px;
-  border-left: none;
-  border-top: none;
-  border-right: none;
 }
 
 #name-display{
@@ -24,4 +21,24 @@ h1 {
   text-decoration: none;
   margin-left: -250px;
   color: rgb(238, 219, 39);
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  margin-left: 125px;
+  background-color: rgba(238, 118, 20, 0.573);
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(8, 6, 147, 0.912);
+  color: white;
+  font-size: 15px; 
+  -webkit-transition: font-size .6s ease-in-out;
+  -moz-transition: font-size .6s ease-in-out;
+  -o-transition: font-size .6s ease-in-out;
+  transition: font-size .6s ease-in-out;
 }

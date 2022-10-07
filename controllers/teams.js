@@ -20,7 +20,7 @@ function create(req, res) {
 }
 
 function index(req, res) {
-  Team.find({})
+  Team.find()
   .populate('owner')
   .then(teams => {
     res.render('teams/index', {
@@ -38,13 +38,17 @@ function show(req, res) {
   .populate('owner')
   .populate('players')
   .then(team => {
-    Player.find({_id: {$nin: team.players}})
+    Player.find({owner: req.user.profile._id})
     .then(players => {
       res.render('teams/show', {
         team,
         players
       })
     })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/teams')
   })
 }
 
@@ -64,7 +68,12 @@ function addPlayer(req, res) {
         res.redirect(`/teams/${team._id}`)
     })
   })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/teams')
+  })
 }
+
 
 export {
   newTeam as new,

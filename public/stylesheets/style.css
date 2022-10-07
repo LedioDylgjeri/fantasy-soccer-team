@@ -25,7 +25,7 @@ body {
 }
 
 nav {
-  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlPxxuQIoWpe2ULI_lbBqSkStmTQ6rhl4poyqm2t7pHlMZRl_DqPkFhCteUeKQfNTzYg8&usqp=CAU);
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRewwzENtKYEoNEpvcpOx99ImsOCyr000PwrQ&usqp=CAU);
   color: #f1e428;
   display: flex;
   align-items: center;
@@ -34,7 +34,7 @@ nav {
 }
 
 nav > a{
-  color: rgba(5, 201, 149, 0.937);
+  color: rgba(28, 6, 139, 0.937);
   text-decoration: none;
   margin: 0 auto;
 }
@@ -66,7 +66,7 @@ main > h1 {
 
 div > img {
   border: 2px solid rgb(15, 179, 239);
-  border-radius: 50%;
+  border-radius: 25px;
   display: block;
   align-items: center;
 }

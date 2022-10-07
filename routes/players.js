@@ -14,7 +14,7 @@ router.get('/:id/edit', isLoggedIn, playersCtrl.edit)
 
 router.post('/', isLoggedIn, playersCtrl.create)
 
-router.put('/:id', isLoggedIn, playersCtrl.update)
+router.put('/:id', isLoggedIn, playersCtrl.editPlayer)
 
 router.delete('/:id', isLoggedIn, playersCtrl.delete)
 
