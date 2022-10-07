@@ -28,13 +28,14 @@ button {
   border-radius: 5px;
   height: 25px;
   margin-left: 125px;
-  background-color: rgba(238, 118, 20, 0.573);
+  background-color: rgba(185, 15, 232, 0.573);
+  color: white;
   font-weight: bolder;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: rgba(8, 6, 147, 0.912);
+  background-color: rgba(8, 6, 147, 0.762);
   color: white;
   font-size: 15px; 
   -webkit-transition: font-size .6s ease-in-out;

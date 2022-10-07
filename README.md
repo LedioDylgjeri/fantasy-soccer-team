@@ -36,7 +36,7 @@ ERD:
 App:
 ![For web browser](./public/READMEimg/Screen%20Shot%202022-10-06%20at%2012.46.27%20PM.png)
 
-
+![Trello](https://trello.com/b/AFXoDuFz/fantasy-soccer-team)
 
 ## Ice box:
 * Add additional functionality to edit team players
