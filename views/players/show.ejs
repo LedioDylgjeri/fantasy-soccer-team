@@ -1,36 +1,36 @@
 <%- include('../partials/html-head') %>
 <%- include('../partials/nav') %>
 
-  <h1>Your Players</h1>
-  <% if (user) { %>
-    <table>
-      <thead>
+<h1>Your Players</h1>
+<% if (user) { %>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Position</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% players.forEach(player => { %>  
         <tr>
-          <th>Name</th>
-          <th>Position</th>
-          <th>Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        <% players.forEach(player => { %>  
-          <tr>
-            <td><%= player.name %> </td>
-            <td><%= player.position %></td> 
-            <td><%= player.status %> </td> 
-            <td>
-              <% if (player.owner.equals(user?.profile._id)) { %> 
-                <form action="/players/<%= player._id %>?_method=DELETE" method="POST">
-                  <button type="submit">X</button>
-                </form>
-                <a href="/players/<%= player._id %>/edit?_method=DELETE" method="POST">
-                  <button class="btn" type="submit">Edit Player</button>
-                </a>
-              <% } %>  
-            </td>
-          </tr>  
-        </tbody>
-      </table>    
-    <% }) %>
-  <% } %>  
+          <td><%= player.name %> </td>
+          <td><%= player.position %></td> 
+          <td><%= player.status %> </td> 
+          <td>
+            <% if (player.owner.equals(user?.profile._id)) { %> 
+              <form action="/players/<%= player._id %>?_method=DELETE" method="POST">
+                <button type="submit">X</button>
+              </form>
+              <a href="/players/<%= player._id %>/edit?_method=DELETE" method="POST">
+                <button class="btn" type="submit">Edit Player</button>
+              </a>
+            <% } %>  
+          </td>
+        </tr>  
+      </tbody>
+    </table>    
+  <% }) %>
+<% } %>  
 
 <%- include('../partials/footer') %>

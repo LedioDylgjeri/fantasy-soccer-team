@@ -33,6 +33,7 @@ input {
   color: rgb(181, 7, 7);
   background-color: rgba(240, 234, 234, 0.521);
   font-weight: bolder;
+  text-align: center;
 }
 
 button {
@@ -47,7 +48,6 @@ button {
 
 button:hover {
   background-color: rgba(8, 205, 231, 0.912);
-  border: 2px dotted yellow;
   font-size: 15px; 
   -webkit-transition: font-size .6s ease-in-out;
   -moz-transition: font-size .6s ease-in-out;
