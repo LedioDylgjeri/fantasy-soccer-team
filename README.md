@@ -1,11 +1,11 @@
 # Fantasy-Soccer
 
-I grew up plyaing soccer and became a huge fan of the sport.  Lately, my team hasn't been doing so well. Their performance has sparked debates around the players.  If given the chance to create my own team, who would I chose?  
+I grew up plyaing soccer and became a huge fan of the sport.  Lately, my team hasn't been doing so well. Their performance has sparked debates around the players.  If given the chance to create my own team, who would I choose?  
 
 ## Check out the app:
 [FANTASY SOCCER](https://fantasy-soccer.fly.dev/)
 
-## Descrtiption:
+## Description:
 This app gives users the chance to create their own soccer team.  The user can get creative with the team name or use an existing team. Create and add your favorite players to the team.
 
 ## How to use it:
